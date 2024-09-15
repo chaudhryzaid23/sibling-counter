@@ -8,4 +8,10 @@ import { ChildCounterComponent } from './child-counter/child-counter.component';
   templateUrl: './parent-count.component.html',
   styleUrl: './parent-count.component.scss',
 })
-export class ParentCountComponent {}
+export class ParentCountComponent {
+  displayNum!: number;
+
+  clickResponse(count: number) {
+    this.displayNum = count;
+  }
+}
