@@ -10,6 +10,7 @@ import { ChildCounterComponent } from './child-counter/child-counter.component';
 })
 export class ParentCountComponent {
   displayNum!: number;
+  countStart: number = 5;
 
   clickResponse(count: number) {
     this.displayNum = count;

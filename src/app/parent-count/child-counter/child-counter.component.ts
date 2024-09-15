@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child-counter',
@@ -8,9 +8,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './child-counter.component.scss',
 })
 export class ChildCounterComponent {
+  @Input() count!: number;
   @Output() onClickEmitter: EventEmitter<number> = new EventEmitter<number>();
-
-  count: number = 0;
 
   onClick() {
     this.count++;
