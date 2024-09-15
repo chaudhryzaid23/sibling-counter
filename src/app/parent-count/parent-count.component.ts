@@ -9,10 +9,14 @@ import { ChildCounterComponent } from './child-counter/child-counter.component';
   styleUrl: './parent-count.component.scss',
 })
 export class ParentCountComponent {
-  displayNum!: number;
-  countStart: number = 5;
+  countFirst: number = 5;
+  countSecond: number = 5;
 
-  clickResponse(count: number) {
-    this.displayNum = count;
+  clickResponseFirst(count: number) {
+    this.countSecond = count;
+  }
+
+  clickResponseSecond(count: number) {
+    this.countFirst = count;
   }
 }

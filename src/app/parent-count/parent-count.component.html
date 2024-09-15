@@ -1,7 +1,7 @@
 <p>parent-count works!</p>
 
-<p> {{ displayNum }}</p>
+<!-- <p> {{ displayNum }}</p> -->
 
-<app-child-counter [count]="countStart" (onClickEmitter)="clickResponse($event)"></app-child-counter>
+<app-child-counter [count]="countFirst" (onClickEmitter)="clickResponseFirst($event)"></app-child-counter>
 
-<app-child-counter [count]="countStart" (onClickEmitter)="clickResponse($event)"></app-child-counter>
+<app-child-counter [count]="countSecond" (onClickEmitter)="clickResponseSecond($event)"></app-child-counter>
