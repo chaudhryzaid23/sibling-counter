@@ -2,6 +2,8 @@
 
 <!-- <p> {{ displayNum }}</p> -->
 
-<app-child-counter [count]="countFirst" (onClickEmitter)="clickResponseFirst($event)"></app-child-counter>
+<app-child-counter [displayNum]="countFirst" [incCount]="countSecond"
+    (onClickEmitter)="clickResponseFirst($event)"></app-child-counter>
 
-<app-child-counter [count]="countSecond" (onClickEmitter)="clickResponseSecond($event)"></app-child-counter>
+<app-child-counter [displayNum]="countSecond" [incCount]="countFirst"
+    (onClickEmitter)="clickResponseSecond($event)"></app-child-counter>

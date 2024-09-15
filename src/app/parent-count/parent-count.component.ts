@@ -10,7 +10,7 @@ import { ChildCounterComponent } from './child-counter/child-counter.component';
 })
 export class ParentCountComponent {
   countFirst: number = 5;
-  countSecond: number = 5;
+  countSecond: number = 3;
 
   clickResponseFirst(count: number) {
     this.countSecond = count;
