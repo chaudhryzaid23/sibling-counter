@@ -15,5 +15,6 @@ export class ChildCounterComponent {
   onClick() {
     this.count++;
     console.log(this.count);
+    this.onClickEmitter.emit(this.count);
   }
 }
