@@ -29,3 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 9:53 am: Making project with yarn
 10:02 am: Make components and start connecting
 10:45 am:
+10:53 am: Make the components two
